@@ -8,6 +8,8 @@ Personal config files for my dev environment. Synced across machines so I don't 
 claude/
   CLAUDE.md             user-level Claude Code memory (persona + working style)
   statusline-command.sh status line script for Claude Code (Git Bash)
+  skills/
+    doc/SKILL.md        /doc skill — project documentation discipline
   bin/
     jq.exe              required by statusline-command.sh
 ```

@@ -15,6 +15,7 @@ echo "[bootstrap] Target: $CLAUDE_HOME"
 echo
 
 mkdir -p "$CLAUDE_HOME/bin"
+mkdir -p "$CLAUDE_HOME/skills/doc"
 
 backup_if_exists() {
     local target="$1"
@@ -40,6 +41,7 @@ install_file() {
 install_file "$DOTFILES_DIR/claude/CLAUDE.md"             "$CLAUDE_HOME/CLAUDE.md"
 install_file "$DOTFILES_DIR/claude/statusline-command.sh" "$CLAUDE_HOME/statusline-command.sh"
 install_file "$DOTFILES_DIR/claude/bin/jq.exe"            "$CLAUDE_HOME/bin/jq.exe"
+install_file "$DOTFILES_DIR/claude/skills/doc/SKILL.md"   "$CLAUDE_HOME/skills/doc/SKILL.md"
 
 echo
 echo "[bootstrap] Done. Restart Claude Code to apply."
